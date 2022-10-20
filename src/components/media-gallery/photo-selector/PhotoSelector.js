@@ -1,10 +1,14 @@
 import "./PhotoSelector.css";
 
-const PhotoSelector = ({ images }) => {
+const PhotoSelector = ({ images, changeSelectedImage }) => {
   const display = images.map(({ href }, index) => {
     return (
-      <div className="ImgContainer">
-        <img src={href} />
+      <div
+        key={index}
+        className="ImgContainer"
+        onClick={(e) => changeSelectedImage(e)}
+      >
+        <img id={index} src={href} />
       </div>
     );
   });
