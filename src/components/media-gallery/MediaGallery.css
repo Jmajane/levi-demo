@@ -1,0 +1,11 @@
+.MediaGallery {
+  height: 50vh;
+  border: 3px solid black;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.SelectedImg {
+  border: 3px solid red;
+}

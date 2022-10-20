@@ -1,0 +1,11 @@
+.PhotoSelector {
+  height: 100%;
+  border: 3px solid green;
+}
+
+.ImgContainer {
+  height: 20%;
+}
+.ImgContainer img {
+  height: 100%;
+}
