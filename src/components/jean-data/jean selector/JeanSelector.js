@@ -24,3 +24,4 @@ const JeanSelector = ({ JeanColor, changeSelectedImage }) => {
     return <div className='TextureSelector'>{view}</div>
 }
 
+export default JeanSelector

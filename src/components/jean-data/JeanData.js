@@ -1,4 +1,5 @@
-import React from 'react'
+import { useState } from 'react'
+import JeanSelector from './jean selector/JeanSelector';
 
 function JeanData() {
 
@@ -427,8 +428,11 @@ function JeanData() {
       ];
 
   return (
-    <div>JeanData</div>
+    <div className='JeanTexture'>
+
+    </div>
   )
 }
+
 
 export default JeanData
