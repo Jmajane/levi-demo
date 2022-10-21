@@ -7,7 +7,7 @@ import { AiOutlineShopping } from "react-icons/ai";
 
 function MobileNav() {
   return (
-    <div className="Nav">
+    <div className="MobileNav">
       <div>
         <AiOutlineMenu />
       </div>
