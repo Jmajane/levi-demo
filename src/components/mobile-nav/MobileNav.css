@@ -1,0 +1,22 @@
+.Nav {
+  height: 64px;
+
+  border: 1px solid rgb(233, 233, 233);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Nav img {
+  height: 30px;
+}
+
+.Nav svg {
+  font-size: 24px;
+}
+
+.Nav div {
+  width: 200px;
+  display: flex;
+  justify-content: space-evenly;
+}
