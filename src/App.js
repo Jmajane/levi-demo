@@ -1,5 +1,4 @@
 import "./App.css";
-import Nav from "./components/nav/Nav";
 
 import MediaGallery from "./components/media-gallery/MediaGallery";
 
@@ -178,10 +177,9 @@ function App() {
     <div className="App">
 
       <Nav />
-      <MediaGallery />
-
-      <Nav /> 
       <Header />
+
+      <MediaGallery />
 
       <div>
 
