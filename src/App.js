@@ -153,7 +153,7 @@ function App() {
       href:"https://lsco.scene7.com/is/image/lsco/A34940012-alt3-pdp-lse?fmt=jpeg&qlt=70,1&op_sharpen=0&resMode=sharp2&op_usm=0.8,1,10,0&fit=crop,0&wid=450&hei=750",
       colorStyle: "Unicycle - Dark Wash - Stretch",
       rating: <StyledRating name="four-star" defaultValue={4.3} precision={0.1} />,
-      votes: "()186",
+      votes: "(186)",
       price: "$69.50",
       waist:["28", "29", "30", "31", "32", "33", "34", "35", "36", "38", "40", "42", "44"],
       length:["29", "30", "32", "34", "36"],
