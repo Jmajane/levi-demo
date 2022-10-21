@@ -1,8 +1,9 @@
 import "./JeanSelector.css";
 import { styled } from "@mui/material/styles";
 import Rating from "@mui/material/Rating";
+import ColorSelector from "./color-selector/ColorSelector";
 
-const JeanSelector = ({ jeanColor, changeSelectedImage }) => {
+const JeanSelector = ({ jeanColor, colors, changeSelectedImage }) => {
   const StyledRating = styled(Rating)({
     "& .MuiRating-iconFilled": {
       color: "black",
@@ -34,6 +35,7 @@ const JeanSelector = ({ jeanColor, changeSelectedImage }) => {
       />
       <p>{jeanColor.votes}</p>
       <h2>{jeanColor.price}</h2>
+      <ColorSelector colors={colors} jeanColor={jeanColor} />
       <p className="Grey-out">Or 4 installments of $19.88</p>
       <p className="Deal">2 for $99. Applied at Checkout</p>
       <p>{jeanColor.colorStyle}</p>

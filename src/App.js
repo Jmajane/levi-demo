@@ -15,7 +15,7 @@ function App() {
     <div className="App">
       <Nav />
       <MobileNav />
-      <JeanSelector jeanColor={selectedJean} />
+      <JeanSelector jeanColor={selectedJean} colors={jeanData} />
 
       {/* <div>
         <div className="Jeans">
