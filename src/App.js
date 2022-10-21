@@ -3,11 +3,11 @@ import "./App.css";
 import MediaGallery from "./components/media-gallery/MediaGallery";
 
 import "./App.css";
-import Header from "./components/header/Header";
 
 import { styled } from "@mui/material/styles";
 import Rating from "@mui/material/Rating";
 import MobileNav from "./components/mobile-nav/MobileNav";
+import Nav from "./components/nav/Nav";
 
 function App() {
   const StyledRating = styled(Rating)({
@@ -442,6 +442,7 @@ function App() {
 
   return (
     <div className="App">
+      <Nav />
       <MobileNav />
       {/* <Header /> */}
       {/* <MediaGallery /> */}

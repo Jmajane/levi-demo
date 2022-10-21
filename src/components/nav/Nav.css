@@ -1,0 +1,35 @@
+.Nav img {
+  height: 40px;
+}
+
+.Nav {
+  height: 64px;
+  border: 1px solid rgb(233, 233, 233);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Nav div {
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.SearchBar input {
+  border: none;
+  width: 160px;
+}
+.SearchBar input:focus {
+  outline: none;
+}
+
+.SearchBar {
+  border-bottom: 1px solid rgb(233, 233, 233);
+}
+
+@media only screen and (max-width: 1024px) {
+  .Nav {
+    display: none;
+  }
+}
