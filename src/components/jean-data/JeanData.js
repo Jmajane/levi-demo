@@ -7,9 +7,7 @@ function JeanData() {
         {
           href: "https://lsco.scene7.com/is/image/lsco/A34940012-alt3-pdp-lse?fmt=jpeg&qlt=70,1&op_sharpen=0&resMode=sharp2&op_usm=0.8,1,10,0&fit=crop,0&wid=450&hei=750",
           colorStyle: "Optic Daisy - Non Stretch",
-          rating: (
-            <StyledRating name="four-star" defaultValue={4.3} precision={0.1} />
-          ),
+          rating: 4.3,
           votes: "(2709)",
           price: "$79.50",
           waist: [
@@ -32,9 +30,7 @@ function JeanData() {
         {
           href: "https://lsco.scene7.com/is/image/lsco/A34940012-alt3-pdp-lse?fmt=jpeg&qlt=70,1&op_sharpen=0&resMode=sharp2&op_usm=0.8,1,10,0&fit=crop,0&wid=450&hei=750",
           colorStyle: "Light Stonewash - Non Stretch",
-          rating: (
-            <StyledRating name="four-star" defaultValue={4.3} precision={0.1} />
-          ),
+          rating: 4.3,
           votes: "(3111)",
           price: "79.50",
           waist: [
@@ -56,9 +52,7 @@ function JeanData() {
         {
           href: "https://lsco.scene7.com/is/image/lsco/A34940012-alt3-pdp-lse?fmt=jpeg&qlt=70,1&op_sharpen=0&resMode=sharp2&op_usm=0.8,1,10,0&fit=crop,0&wid=450&hei=750",
           colorStyle: "Thunder Moon Rocks - Light Wash - Stretch",
-          rating: (
-            <StyledRating name="four-star" defaultValue={4.1} precision={0.1} />
-          ),
+          rating: 4.1,
           votes: "(120)",
           price: "$79.50",
           waist: [
@@ -80,9 +74,7 @@ function JeanData() {
         {
           href: "https://lsco.scene7.com/is/image/lsco/A34940012-alt3-pdp-lse?fmt=jpeg&qlt=70,1&op_sharpen=0&resMode=sharp2&op_usm=0.8,1,10,0&fit=crop,0&wid=450&hei=750",
           colorStyle: "All For One - Medium Wash - Stretch",
-          rating: (
-            <StyledRating name="four-star" defaultValue={4.2} precision={0.1} />
-          ),
+          rating: 4.2,
           votes: "(74)",
           price: "$79.50",
           waist: [
@@ -104,9 +96,7 @@ function JeanData() {
         {
           href: "https://lsco.scene7.com/is/image/lsco/A34940012-alt3-pdp-lse?fmt=jpeg&qlt=70,1&op_sharpen=0&resMode=sharp2&op_usm=0.8,1,10,0&fit=crop,0&wid=450&hei=750",
           colorStyle: "Medium Stonewash - Non Stretch",
-          rating: (
-            <StyledRating name="four-star" defaultValue={4.1} precision={0.1} />
-          ),
+          rating: 4.1,
           votes: "(4252)",
           price: "$79.50",
           waist: [
@@ -130,9 +120,7 @@ function JeanData() {
         {
           href: "https://lsco.scene7.com/is/image/lsco/A34940012-alt3-pdp-lse?fmt=jpeg&qlt=70,1&op_sharpen=0&resMode=sharp2&op_usm=0.8,1,10,0&fit=crop,0&wid=450&hei=750",
           colorStyle: "Black - Non Stretch",
-          rating: (
-            <StyledRating name="four-star" defaultValue={4.3} precision={0.1} />
-          ),
+          rating: 4.3,
           votes: "(2994)",
           price: "$79.50",
           waist: [
@@ -156,9 +144,7 @@ function JeanData() {
         {
           href: "https://lsco.scene7.com/is/image/lsco/A34940012-alt3-pdp-lse?fmt=jpeg&qlt=70,1&op_sharpen=0&resMode=sharp2&op_usm=0.8,1,10,0&fit=crop,0&wid=450&hei=750",
           colorStyle: "Rinse - Dark Eash - Non Stretch",
-          rating: (
-            <StyledRating name="four-star" defaultValue={4.2} precision={0.1} />
-          ),
+          rating: 4.2,
           votes: "(3136)",
           price: "$79.50",
           waist: [
@@ -182,9 +168,7 @@ function JeanData() {
         {
           href: "https://lsco.scene7.com/is/image/lsco/A34940012-alt3-pdp-lse?fmt=jpeg&qlt=70,1&op_sharpen=0&resMode=sharp2&op_usm=0.8,1,10,0&fit=crop,0&wid=450&hei=750",
           colorStyle: "Dark Stonewash - Non Stretch",
-          rating: (
-            <StyledRating name="four-star" defaultValue={4.1} precision={0.1} />
-          ),
+          rating: 4.1,
           votes: "(3452)",
           price: "79,50",
           waist: [
@@ -207,9 +191,7 @@ function JeanData() {
         {
           href: "https://lsco.scene7.com/is/image/lsco/A34940012-alt3-pdp-lse?fmt=jpeg&qlt=70,1&op_sharpen=0&resMode=sharp2&op_usm=0.8,1,10,0&fit=crop,0&wid=450&hei=750",
           colorStyle: "Uncanny - Medium Wash - Stretch",
-          rating: (
-            <StyledRating name="four-star" defaultValue={4.1} precision={0.1} />
-          ),
+          rating: 4.1,
           votes: "(191)",
           price: "$79.50",
           waist: [
@@ -232,9 +214,7 @@ function JeanData() {
         {
           href: "https://lsco.scene7.com/is/image/lsco/A34940012-alt3-pdp-lse?fmt=jpeg&qlt=70,1&op_sharpen=0&resMode=sharp2&op_usm=0.8,1,10,0&fit=crop,0&wid=450&hei=750",
           colorStyle: "On my Radio - Medium Wash - Non Stretch",
-          rating: (
-            <StyledRating name="four-star" defaultValue={4.1} precision={0.1} />
-          ),
+          rating: 4.1,
           votes: "(883)",
           price: "$79.50",
           waist: [
@@ -256,9 +236,7 @@ function JeanData() {
         {
           href: "https://lsco.scene7.com/is/image/lsco/A34940012-alt3-pdp-lse?fmt=jpeg&qlt=70,1&op_sharpen=0&resMode=sharp2&op_usm=0.8,1,10,0&fit=crop,0&wid=450&hei=750",
           colorStyle: "Unleaded - Light Wash - Stretch",
-          rating: (
-            <StyledRating name="four-star" defaultValue={4.6} precision={0.1} />
-          ),
+          rating: 4.6,
           votes: "(910)",
           price: "$79.50",
           waist: [
@@ -280,9 +258,7 @@ function JeanData() {
         {
           href: "https://lsco.scene7.com/is/image/lsco/A34940012-alt3-pdp-lse?fmt=jpeg&qlt=70,1&op_sharpen=0&resMode=sharp2&op_usm=0.8,1,10,0&fit=crop,0&wid=450&hei=750",
           colorStyle: "Anchor - Dark Wash - Non Stretch",
-          rating: (
-            <StyledRating name="four-star" defaultValue={4.6} precision={0.1} />
-          ),
+          rating: 4.6,
           votes: "(855)",
           price: "$79.50",
           waist: [
@@ -306,9 +282,7 @@ function JeanData() {
         {
           href: "https://lsco.scene7.com/is/image/lsco/A34940012-alt3-pdp-lse?fmt=jpeg&qlt=70,1&op_sharpen=0&resMode=sharp2&op_usm=0.8,1,10,0&fit=crop,0&wid=450&hei=750",
           colorStyle: "Higher Mountain - Light Wash - Stretch",
-          rating: (
-            <StyledRating name="four-star" defaultValue={4.1} precision={0.1} />
-          ),
+          rating: 4.1,
           votes: "(70)",
           price: "$79.50",
           waist: [
@@ -330,9 +304,7 @@ function JeanData() {
         {
           href: "https://lsco.scene7.com/is/image/lsco/A34940012-alt3-pdp-lse?fmt=jpeg&qlt=70,1&op_sharpen=0&resMode=sharp2&op_usm=0.8,1,10,0&fit=crop,0&wid=450&hei=750",
           colorStyle: "DiRienzo - Grey - Stretch",
-          rating: (
-            <StyledRating name="four-star" defaultValue={4.3} precision={0.1} />
-          ),
+          rating: 4.3,
           votes: "(2482)",
           price: "$79.50",
           waist: [
@@ -354,9 +326,7 @@ function JeanData() {
         {
           href: "https://lsco.scene7.com/is/image/lsco/A34940012-alt3-pdp-lse?fmt=jpeg&qlt=70,1&op_sharpen=0&resMode=sharp2&op_usm=0.8,1,10,0&fit=crop,0&wid=450&hei=750",
           colorStyle: "Clean Rigid - Dark Wash - Non Stretch",
-          rating: (
-            <StyledRating name="four-star" defaultValue={4.3} precision={0.1} />
-          ),
+          rating: 4.3,
           votes: "(2530)",
           price: "$79.50",
           waist: [
@@ -379,9 +349,7 @@ function JeanData() {
         {
           href: "https://lsco.scene7.com/is/image/lsco/A34940012-alt3-pdp-lse?fmt=jpeg&qlt=70,1&op_sharpen=0&resMode=sharp2&op_usm=0.8,1,10,0&fit=crop,0&wid=450&hei=750",
           colorStyle: "Unicycle - Dark Wash - Stretch",
-          rating: (
-            <StyledRating name="four-star" defaultValue={4.3} precision={0.1} />
-          ),
+          rating: 4.3,
           votes: "()186",
           price: "$69.50",
           waist: [
@@ -404,9 +372,7 @@ function JeanData() {
         {
           href: "https://lsco.scene7.com/is/image/lsco/A34940012-alt3-pdp-lse?fmt=jpeg&qlt=70,1&op_sharpen=0&resMode=sharp2&op_usm=0.8,1,10,0&fit=crop,0&wid=450&hei=750",
           colorStyle: "Cast off - Brown - Non Stretch",
-          rating: (
-            <StyledRating name="zero-star" defaultValue={0.0} precision={0.0} />
-          ),
+          rating: 0.0,
           votes: "",
           price: "$79.50",
           waist: [
