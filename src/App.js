@@ -443,6 +443,7 @@ function App() {
   return (
     <div className="App">
       <Nav />
+      <MobileNav />
       {/* <Header /> */}
       {/* <MediaGallery /> */}
 
