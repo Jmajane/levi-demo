@@ -1,9 +1,9 @@
-import "./JeanSelector.css";
+import "./StyleSelector.css";
 import { styled } from "@mui/material/styles";
 import Rating from "@mui/material/Rating";
 import ColorSelector from "./color-selector/ColorSelector";
 
-const JeanSelector = ({ jeanColor, colors, changeSelectedImage }) => {
+const StyleSelector = ({ jeanColor, colors, changeSelectedImage }) => {
   const StyledRating = styled(Rating)({
     "& .MuiRating-iconFilled": {
       color: "black",
@@ -47,4 +47,4 @@ const JeanSelector = ({ jeanColor, colors, changeSelectedImage }) => {
   );
 };
 
-export default JeanSelector;
+export default StyleSelector;

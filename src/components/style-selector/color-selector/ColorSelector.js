@@ -1,12 +1,15 @@
 import "./ColorSelector.css";
 
 function ColorSelector({ colors, jeanColor }) {
-  console.log(colors);
+  
+
   const availableColors = colors.map(({ href, colorStyle }, index) => {
     if (index < 7) {
       return (
         <div key={index} className="ColorDiv">
-          <img src={href} />
+          <img src={href} 
+
+          />
         </div>
       );
     }
