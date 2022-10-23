@@ -1,31 +1,23 @@
 import "./App.css";
 
-import MediaGallery from "./components/media-gallery/MediaGallery";
-
-import "./App.css";
-
-import { styled } from "@mui/material/styles";
-import Rating from "@mui/material/Rating";
 import MobileNav from "./components/mobile-nav/MobileNav";
 import Nav from "./components/nav/Nav";
 
+import { useState } from "react";
+import JeanSelector from "./components/jean-selector/JeanSelector";
+
+import jeanData from "./components/jean-data/jeanData";
+
 function App() {
-  const StyledRating = styled(Rating)({
-    "& .MuiRating-iconFilled": {
-      color: "black",
-    },
-  });
-
-
+  const [selectedJean, setSelectedJean] = useState(jeanData[0]);
 
   return (
     <div className="App">
       <Nav />
       <MobileNav />
-      {/* <Header /> */}
-      {/* <MediaGallery /> */}
+      <JeanSelector jeanColor={selectedJean} colors={jeanData} />
 
-      <div>
+      {/* <div>
         <div className="Jeans">
           <h3>501 ORIGINAL FIT MEN'S JEANS</h3>
           <StyledRating name="four-star" defaultValue={4.3} precision={0.1} />
@@ -36,7 +28,7 @@ function App() {
         </div>
 
         <div className="Jean-colors"></div>
-      </div>
+      </div> */}
     </div>
   );
 }
