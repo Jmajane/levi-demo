@@ -1,6 +1,6 @@
 import LightIndigo from "../images/Light-Indigo/LightIndigo.jpeg"
 import Salsa from "../images/Salsa/salsa.jpeg"
-import Ra from "../images/Ra/Ra.png"
+import Ra from "../images/Ra/Ra.jpeg"
 import Jazz from "../images/Jazz/Jazz.jpeg"
 import MediumIndigo from "../images/MediumIndigo/MediumIndigo.jpeg"
 import Orinda from "../images/Orinda/Orinda.jpeg"

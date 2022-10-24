@@ -3,11 +3,11 @@ import "./ColorSelector.css";
 function ColorSelector({ colors, jeanColor }) {
   
 
-  const availableColors = colors.map(({ href, colorStyle }, index) => {
+  const availableColors = colors.map(({ jeanColor, name }, index) => {
     if (index < 7) {
       return (
         <div key={index} className="ColorDiv">
-          <img src={href} 
+          <img src={jeanColor} 
 
           />
         </div>
