@@ -16,10 +16,10 @@ function JeanTitleRating({ jeanColor }) {
         <h3>501 ORIGINAL FIT MEN'S JEANS</h3>
         <StyledRating
         name="star-rating"
-        defaultValue={jeanColor.rating}
+        defaultValue={jeanColor.styles[0].rating}
         precision={0.1} 
       />
-      <p>{jeanColor.votes}</p>
+      <p>{jeanColor.styles[0].votes}</p>
     </div>
   )
 }

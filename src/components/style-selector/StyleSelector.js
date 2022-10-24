@@ -4,7 +4,6 @@ import ColorSelector from "./color-selector/ColorSelector";
 
 const StyleSelector = ({ jeanColor, colors, changeSelectedImage }) => {
 
-  console.log(jeanColor.styles[0].waist)
 
   const mappedWaist = jeanColor.styles[0].waist.map((size) => {
     return (
