@@ -13,7 +13,7 @@ function JeanTitleRating({ jeanColor }) {
 
   return (
     <div>
-        <h3>501 ORIGINAL FIT MEN'S JEANS</h3>
+        <h3>{jeanColor.title}</h3>
         <StyledRating
         name="star-rating"
         defaultValue={jeanColor.styles[0].rating}
