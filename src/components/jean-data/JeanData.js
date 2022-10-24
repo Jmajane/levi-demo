@@ -5,6 +5,8 @@ import Jazz from "../images/Jazz/Jazz.jpeg"
 import MediumIndigo from "../images/MediumIndigo/MediumIndigo.jpeg"
 import Orinda from "../images/Orinda/Orinda.jpeg"
 import BlackHeart from '../images/BlackHeart/BlackHeart.jpeg'
+import OjaiBlue from '../images/OjaiBlue/OjaiBlue.jpeg'
+import SambaGoal from '../images/SambaGoal/SambaGoal.jpeg'
 
 
 const jeanData = [
@@ -110,13 +112,13 @@ const jeanData = [
   title: "501® ORIGINAL CROPPED WOMEN'S JEANS",
   styles: [
     {
-      name: "Destructed Light Indigo - Light Wash",
-      jeanColor: {LightIndigo},
+      name: "Ojai Blue - Light Wash",
+      jeanColor: {OjaiBlue},
       price: "$108.00",
-      rating: 0,
-      votes: "(0)",
+      rating: 5,
+      votes: "(1)",
       waist: [23, 24, 25, 26, 27, 28, 29, 30, 31, 32],
-      length: [28],
+      length: [26, 28],
       pictures: ["href", "href"],
     }],
   },
@@ -124,13 +126,13 @@ const jeanData = [
   title: "501® ORIGINAL CROPPED WOMEN'S JEANS",
   styles: [
     {
-      name: "Destructed Light Indigo - Light Wash",
-      jeanColor: {LightIndigo},
+      name: "Samba Goal - Light Wash",
+      jeanColor: {SambaGoal},
       price: "$108.00",
-      rating: 0,
-      votes: "(0)",
+      rating: 4.6,
+      votes: "(7)",
       waist: [23, 24, 25, 26, 27, 28, 29, 30, 31, 32],
-      length: [28],
+      length: [26, 28],
       pictures: ["href", "href"],
     }],
   },
