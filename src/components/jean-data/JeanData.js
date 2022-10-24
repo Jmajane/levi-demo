@@ -2,6 +2,9 @@ import LightIndigo from "../images/Light-Indigo/LightIndigo.jpeg"
 import Salsa from "../images/Salsa/salsa.jpeg"
 import Ra from "../images/Ra/Ra.png"
 import Jazz from "../images/Jazz/Jazz.jpeg"
+import MediumIndigo from "../images/MediumIndigo/MediumIndigo.jpeg"
+import Orinda from "../images/Orinda/Orinda.jpeg"
+import BlackHeart from '../images/BlackHeart/BlackHeart.jpeg'
 
 
 const jeanData = [
@@ -66,7 +69,7 @@ const jeanData = [
   styles: [
     {
       name: "Worn In Medium Indigo - Medium Wash",
-      jeanColor: {LightIndigo},
+      jeanColor: {MediumIndigo},
       price: "$108.00",
       rating: 3.8,
       votes: "(3)",
@@ -79,13 +82,13 @@ const jeanData = [
   title: "501® ORIGINAL CROPPED WOMEN'S JEANS",
   styles: [
     {
-      name: "Destructed Light Indigo - Light Wash",
-      jeanColor: {LightIndigo},
+      name: "Orinda Troy Horse - Dark Wash",
+      jeanColor: {Orinda},
       price: "$108.00",
-      rating: 0,
-      votes: "(0)",
+      rating: 4.1,
+      votes: "(5)",
       waist: [23, 24, 25, 26, 27, 28, 29, 30, 31, 32],
-      length: [28],
+      length: [26, 28, 30],
       pictures: ["href", "href"],
     }],
   },
