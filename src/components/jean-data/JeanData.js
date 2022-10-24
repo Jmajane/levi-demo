@@ -7,6 +7,7 @@ import Orinda from "../images/Orinda/Orinda.jpeg"
 import BlackHeart from '../images/BlackHeart/BlackHeart.jpeg'
 import OjaiBlue from '../images/OjaiBlue/OjaiBlue.jpeg'
 import SambaGoal from '../images/SambaGoal/SambaGoal.jpeg'
+import WornInGrey from '../images/WornInGrey/WornInGrey.jpeg'
 
 
 const jeanData = [
@@ -140,11 +141,11 @@ const jeanData = [
   title: "501® ORIGINAL CROPPED WOMEN'S JEANS",
   styles: [
     {
-      name: "Destructed Light Indigo - Light Wash",
-      jeanColor: {LightIndigo},
+      name: "Worn In Grey - Grey",
+      jeanColor: {WornInGrey},
       price: "$108.00",
       rating: 0,
-      votes: "(0)",
+      votes: "",
       waist: [23, 24, 25, 26, 27, 28, 29, 30, 31, 32],
       length: [28],
       pictures: ["href", "href"],
