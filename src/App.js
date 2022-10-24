@@ -7,7 +7,7 @@ import Nav from "./components/nav/Nav";
 import JeanSelector from "./components/style-selector/StyleSelector";
 import jeanData from "./components/jean-data/JeanData";
 import JeanTitleRating from "./components/jean-title-rating/JeanTitleRating";
-
+import JeanPrice from "./components/jean-price/JeanPrice";
 
 
 function App() {
@@ -17,9 +17,10 @@ function App() {
     <div className="App">
       <Nav />
       <MobileNav />
-      <JeanSelector jeanColor={selectedJean} colors={jeanData} />
       <JeanTitleRating jeanColor={selectedJean} />
-      
+      <JeanPrice jeanColor={selectedJean} />
+      <JeanSelector jeanColor={selectedJean} colors={jeanData} />
+
     </div>
   );
 }

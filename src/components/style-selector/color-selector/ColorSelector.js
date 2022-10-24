@@ -16,7 +16,7 @@ function ColorSelector({ colors, jeanColor }) {
   });
   return (
     <div>
-      <h4>{jeanColor.colorStyle}</h4>
+      <p>{jeanColor.colorStyle}</p>
       <div className="ColorContainer">{availableColors}</div>
     </div>
   );
