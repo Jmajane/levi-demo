@@ -1,12 +1,14 @@
 import "./App.css";
 
+import { useState } from "react";
+
 import MobileNav from "./components/mobile-nav/MobileNav";
 import Nav from "./components/nav/Nav";
+import JeanSelector from "./components/style-selector/StyleSelector";
+import jeanData from "./components/jean-data/JeanData";
+import JeanTitleRating from "./components/jean-title-rating/JeanTitleRating";
+import JeanPrice from "./components/jean-price/JeanPrice";
 
-import { useState } from "react";
-import JeanSelector from "./components/jean-selector/JeanSelector";
-
-import jeanData from "./components/jean-data/jeanData";
 
 function App() {
   const [selectedJean, setSelectedJean] = useState(jeanData[0]);
@@ -15,20 +17,10 @@ function App() {
     <div className="App">
       <Nav />
       <MobileNav />
+      <JeanTitleRating jeanColor={selectedJean} />
+      <JeanPrice jeanColor={selectedJean} />
       <JeanSelector jeanColor={selectedJean} colors={jeanData} />
 
-      {/* <div>
-        <div className="Jeans">
-          <h3>501 ORIGINAL FIT MEN'S JEANS</h3>
-          <StyledRating name="four-star" defaultValue={4.3} precision={0.1} />
-          <p className="Grey-ouy">(3111)</p>
-          <h2 className="Price">$79.50</h2>
-          <p className="Grey-out">Or 4 installments of $19.88</p>
-          <p className="Deal">2 for $99. Applied at Checkout</p>
-        </div>
-
-        <div className="Jean-colors"></div>
-      </div> */}
     </div>
   );
 }
