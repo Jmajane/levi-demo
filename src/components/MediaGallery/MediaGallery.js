@@ -1,7 +1,7 @@
 import "./MediaGallery.css";
 
 import { useState } from "react";
-import JeanTitleRating from "../jean-title-rating/JeanTitleRating";
+import JeanTitleRating from "../JeanTitleRating/JeanTitleRating";
 
 const MediaGallery = ({ jeanData, selectedStyle }) => {
   console.log(selectedStyle);

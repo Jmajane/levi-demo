@@ -11,10 +11,16 @@ function JeanTitleRating({ title, rating, votes }) {
   });
 
   return (
-    <div>
+    <div className="JeanTitleRating">
       <h3>{title}</h3>
-      <StyledRating name="star-rating" defaultValue={rating} precision={0.1} />
-      <p>{votes}</p>
+      <div>
+        <StyledRating
+          name="star-rating"
+          defaultValue={rating}
+          precision={0.1}
+        />
+        <span>{votes}</span>
+      </div>
     </div>
   );
 }

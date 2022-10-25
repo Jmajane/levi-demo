@@ -1,0 +1,10 @@
+.JeanTitleRating {
+}
+
+.JeanTitleRating h3 {
+  font-weight: 800;
+}
+
+.JeanTitleRating div {
+  display: flex;
+}

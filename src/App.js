@@ -5,7 +5,7 @@ import { useState } from "react";
 import MobileNav from "./components/mobile-nav/MobileNav";
 import Nav from "./components/nav/Nav";
 import JeanSelector from "./components/style-selector/StyleSelector";
-import JeanTitleRating from "./components/jean-title-rating/JeanTitleRating";
+import JeanTitleRating from "./components/JeanTitleRating/JeanTitleRating";
 import JeanPrice from "./components/jean-price/JeanPrice";
 import MediaGallery from "./components/MediaGallery/MediaGallery";
 
