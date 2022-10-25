@@ -1,2 +1,15 @@
 .App {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
+
+.Divider {
+  margin-left: 10%;
+}
+
+@media only screen and (min-width: 766px) {
+  .MobileView {
+    display: none;
+  }
 }

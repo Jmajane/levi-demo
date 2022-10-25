@@ -1,26 +1,35 @@
 .MediaGallery {
-  width: 100vw;
-  /* overflow-x: hidden; */
-}
-
-.MediaGallery img {
   width: 100%;
   height: 100%;
 }
 
-.PictureSelectorWrapper {
-  margin-top: 10px;
-  width: 100vw;
+.MediaGallery img {
+  width: 100%;
+  height: 100vw;
+  object-fit: cover;
+}
 
+.PictureSelectorWrapper {
   overflow-x: scroll;
+}
+.PictureSelectorWrapper::-webkit-scrollbar {
+  display: none;
 }
 
 .PictureSelector {
   display: flex;
-  width: 300%;
+  width: 150%;
+}
+
+.ImageWrapper {
+  padding: 10px;
+}
+
+.ImageWrapper img {
+  height: 25vw;
+  width: 25vw;
+  object-fit: cover;
 }
 
 @media only screen and (min-width: 768px) {
-  .MediaGallery {
-  }
 }
