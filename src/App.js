@@ -33,7 +33,7 @@ function App() {
         setSelectedStyle={setSelectedStyle}
         setSelectedPicture={setSelectedPicture}
       />
-      {/* <SizeSelector selectedStyle={selectedStyle} /> */}
+      <SizeSelector selectedStyle={selectedStyle} />
     </div>
   );
 }

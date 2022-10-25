@@ -12,6 +12,10 @@
   overflow-x: scroll;
 }
 
+.ColorSelectorWrapper::-webkit-scrollbar {
+  display: none;
+}
+
 .ColorSelector {
   display: flex;
 }

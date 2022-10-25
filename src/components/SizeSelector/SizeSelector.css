@@ -1,4 +1,17 @@
+.SizeSelector {
+}
+
 .SizeWrapper {
+  width: 100%;
+  display: flex;
+  overflow-x: scroll;
+}
+
+.SizeWrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.Sizes {
   display: flex;
 }
 
