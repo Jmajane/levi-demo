@@ -1,5 +1,13 @@
 import LightIndigo from "./images/Light-Indigo/LightIndigo.jpeg";
+// Salsa
 import Salsa from "./images/Salsa/salsa.jpeg";
+import Salsa1 from "./images/Salsa/salsa1.png";
+import Salsa2 from "./images/Salsa/salsa2.png";
+import Salsa3 from "./images/Salsa/salsa3.png";
+import Salsa4 from "./images/Salsa/salsa4.png";
+import Salsa5 from "./images/Salsa/salsa5.png";
+import Salsa6 from "./images/Salsa/salsa6.png";
+
 import Ra from "./images/Ra/Ra.jpeg";
 import Jazz from "./images/Jazz/Jazz.jpeg";
 import MediumIndigo from "./images/MediumIndigo/MediumIndigo.jpeg";
@@ -30,7 +38,7 @@ const jeanData = {
       votes: "(5)",
       waist: [24, 25, 26, 27, 28, 29, 30, 31, 32],
       length: [28],
-      pictures: ["href", "href"],
+      pictures: [Salsa1, Salsa2, Salsa3, Salsa4, Salsa5, Salsa6],
     },
     {
       name: "Ra - Light Wash",

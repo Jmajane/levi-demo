@@ -7,12 +7,12 @@ import Nav from "./components/nav/Nav";
 import JeanSelector from "./components/style-selector/StyleSelector";
 import JeanTitleRating from "./components/jean-title-rating/JeanTitleRating";
 import JeanPrice from "./components/jean-price/JeanPrice";
-import MediaGallery from "./components/media-gallery/MediaGallery";
+import MediaGallery from "./components/MediaGallery/MediaGallery";
 
 import jeanData from "./jeanData";
 
 function App() {
-  const [selectedStyle, setSelectedStyle] = useState(jeanData);
+  const [selectedStyle, setSelectedStyle] = useState(jeanData.styles[1]);
 
   return (
     <div className="App">
@@ -21,7 +21,7 @@ function App() {
       {/* <JeanTitleRating jeanColor={selectedJean} />
       <JeanPrice jeanColor={selectedJean} />
       <JeanSelector jeanColor={selectedJean} colors={jeanData} /> */}
-      <MediaGallery selectedStyle={selectedStyle} />
+      <MediaGallery jeanData={jeanData} selectedStyle={selectedStyle} />
     </div>
   );
 }
