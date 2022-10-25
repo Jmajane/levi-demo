@@ -42,7 +42,7 @@ const jeanData = {
   styles: [
     {
       name: "Destructed Light Indigo - Light Wash",
-      jeanColor: { LightIndigo },
+      jeanColor: LightIndigo,
       price: "$108.00",
       rating: 0,
       votes: "",
@@ -60,7 +60,7 @@ const jeanData = {
     },
     {
       name: "Salsa - Dark Wash",
-      jeanColor: { Salsa },
+      jeanColor: Salsa,
       price: "$108.00",
       rating: 5,
       votes: "(5)",
@@ -70,7 +70,7 @@ const jeanData = {
     },
     {
       name: "Ra - Light Wash",
-      jeanColor: { Ra },
+      jeanColor: Ra,
       price: "$108.00",
       rating: 4.9,
       votes: "(36)",
@@ -80,7 +80,7 @@ const jeanData = {
     },
     {
       name: "Jazz Pop - Medium Wash",
-      jeanColor: { Jazz },
+      jeanColor: Jazz,
       price: "$98.00",
       rating: 3.3,
       votes: "(3)",
@@ -90,7 +90,7 @@ const jeanData = {
     },
     {
       name: "Worn In Medium Indigo - Medium Wash",
-      jeanColor: { MediumIndigo },
+      jeanColor: MediumIndigo,
       price: "$108.00",
       rating: 3.8,
       votes: "(3)",
@@ -100,7 +100,7 @@ const jeanData = {
     },
     {
       name: "Orinda Troy Horse - Dark Wash",
-      jeanColor: { Orinda },
+      jeanColor: Orinda,
       price: "$108.00",
       rating: 4.1,
       votes: "(5)",
@@ -110,7 +110,7 @@ const jeanData = {
     },
     {
       name: "Black Heart",
-      jeanColor: { BlackHeart },
+      jeanColor: BlackHeart,
       price: "$98.00",
       rating: 4.2,
       votes: "(33)",
@@ -120,7 +120,7 @@ const jeanData = {
     },
     {
       name: "Ojai Blue - Light Wash",
-      jeanColor: { OjaiBlue },
+      jeanColor: OjaiBlue,
       price: "$108.00",
       rating: 5,
       votes: "(1)",
@@ -130,7 +130,7 @@ const jeanData = {
     },
     {
       name: "Samba Goal - Light Wash",
-      jeanColor: { SambaGoal },
+      jeanColor: SambaGoal,
       price: "$108.00",
       rating: 4.6,
       votes: "(7)",
@@ -140,7 +140,7 @@ const jeanData = {
     },
     {
       name: "Worn In Grey - Grey",
-      jeanColor: { WornInGrey },
+      jeanColor: WornInGrey,
       price: "$108.00",
       rating: 0,
       votes: "",

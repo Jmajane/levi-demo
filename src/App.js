@@ -4,12 +4,10 @@ import { useState } from "react";
 
 import MobileNav from "./components/mobile-nav/MobileNav";
 import Nav from "./components/nav/Nav";
-import JeanSelector from "./components/style-selector/StyleSelector";
-import JeanTitleRating from "./components/JeanTitleRating/JeanTitleRating";
-import JeanPrice from "./components/jean-price/JeanPrice";
 import MediaGallery from "./components/MediaGallery/MediaGallery";
 
 import jeanData from "./jeanData";
+import StyleSelector from "./components/StyleSelector/StyleSelector";
 
 function App() {
   const [selectedStyle, setSelectedStyle] = useState(jeanData.styles[1]);
@@ -22,6 +20,7 @@ function App() {
       <JeanPrice jeanColor={selectedJean} />
       <JeanSelector jeanColor={selectedJean} colors={jeanData} /> */}
       <MediaGallery jeanData={jeanData} selectedStyle={selectedStyle} />
+      <StyleSelector styles={jeanData.styles} />
     </div>
   );
 }

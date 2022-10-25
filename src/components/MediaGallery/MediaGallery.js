@@ -4,8 +4,6 @@ import { useState } from "react";
 import JeanTitleRating from "../JeanTitleRating/JeanTitleRating";
 
 const MediaGallery = ({ jeanData, selectedStyle }) => {
-  console.log(selectedStyle);
-
   const [selectedPicture, setSelectedPicture] = useState(
     selectedStyle.pictures[0]
   );
@@ -14,6 +12,7 @@ const MediaGallery = ({ jeanData, selectedStyle }) => {
     return (
       <div
         className="ImageWrapper"
+        key={index}
         onClick={() => setSelectedPicture(selectedStyle.pictures[index])}
       >
         <img src={picture} />
