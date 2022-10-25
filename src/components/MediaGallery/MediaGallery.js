@@ -16,7 +16,7 @@ const MediaGallery = ({
         key={index}
         onClick={() => setSelectedPicture(selectedStyle.pictures[index])}
       >
-        <img src={picture} />
+        <img src={picture} style={{}} />
       </div>
     );
   });
