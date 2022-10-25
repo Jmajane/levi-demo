@@ -5,8 +5,7 @@ import { useState } from "react";
 import MobileNav from "./components/mobile-nav/MobileNav";
 import Nav from "./components/nav/Nav";
 import MediaGallery from "./components/MediaGallery/MediaGallery";
-import JeanTitleRating from "./components/JeanTitleRating/JeanTitleRating";
-import JeanPrice from "./components/jean-price/JeanPrice";
+import JeanPrice from "./components/JeanPrice/JeanPrice"
 
 
 import jeanData from "./jeanData";
@@ -38,6 +37,7 @@ function App() {
             setSelectedPicture={setSelectedPicture}
           />
           <SizeSelector selectedStyle={selectedStyle} />
+          <JeanPrice selectedStyle={selectedStyle} />
         </div>
       </div>
       <div className="DesktopView"></div>
