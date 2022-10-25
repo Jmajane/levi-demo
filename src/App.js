@@ -8,6 +8,7 @@ import MediaGallery from "./components/MediaGallery/MediaGallery";
 
 import jeanData from "./jeanData";
 import StyleSelector from "./components/StyleSelector/StyleSelector";
+import SizeSelector from "./components/SizeSelector/SizeSelector";
 
 function App() {
   const [selectedStyle, setSelectedStyle] = useState(jeanData.styles[1]);
@@ -19,9 +20,9 @@ function App() {
     <div className="App">
       <Nav />
       <MobileNav />
-      {/* <JeanTitleRating jeanColor={selectedJean} />
-      <JeanPrice jeanColor={selectedJean} />
-      <JeanSelector jeanColor={selectedJean} colors={jeanData} /> */}
+      {/* <JeanTitleRating jeanColor={selectedJean} /> */}
+      {/* <JeanPrice jeanColor={selectedJean} /> */}
+
       <MediaGallery
         jeanData={jeanData}
         selectedStyle={selectedStyle}
@@ -34,6 +35,7 @@ function App() {
         setSelectedStyle={setSelectedStyle}
         setSelectedPicture={setSelectedPicture}
       />
+      <SizeSelector selectedStyle={selectedStyle} />
     </div>
   );
 }
