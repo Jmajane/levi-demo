@@ -10,11 +10,12 @@ const MediaGallery = ({ jeanData, selectedStyle }) => {
     selectedStyle.pictures[0]
   );
 
-  const pictures = selectedStyle.pictures.map((picture) => {
-    console.log(picture);
-
+  const pictures = selectedStyle.pictures.map((picture, index) => {
     return (
-      <div className="ImageWrapper">
+      <div
+        className="ImageWrapper"
+        onClick={() => setSelectedPicture(selectedStyle.pictures[index])}
+      >
         <img src={picture} />
       </div>
     );
@@ -30,7 +31,9 @@ const MediaGallery = ({ jeanData, selectedStyle }) => {
       <div className="SelectedPicture">
         <img src={selectedPicture} />
       </div>
-      <div className="PictureSelector">{pictures}</div>
+      <div className="PictureSelectorWrapper">
+        <div className="PictureSelector">{pictures}</div>
+      </div>
     </div>
   );
 };
