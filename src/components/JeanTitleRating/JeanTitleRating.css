@@ -1,4 +1,5 @@
 .JeanTitleRating {
+  padding-left: 70px;
 }
 
 .JeanTitleRating h3 {
@@ -7,4 +8,5 @@
 
 .JeanTitleRating div {
   display: flex;
+  align-items: center;
 }
