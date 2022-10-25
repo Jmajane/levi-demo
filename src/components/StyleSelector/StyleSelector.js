@@ -24,7 +24,9 @@ const StyleSelector = ({
   return (
     <div className="StyleSelector">
       <span>{selectedStyle.name}</span>
-      <div className="ColorWrapper">{availableStyles}</div>
+      <div className="ColorSelectorWrapper">
+        <div className="ColorSelector">{availableStyles}</div>
+      </div>
     </div>
   );
 };

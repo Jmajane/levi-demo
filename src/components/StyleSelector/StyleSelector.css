@@ -1,19 +1,29 @@
 .StyleSelector {
-  margin-top: 20px;
+  margin-top: 10px;
+}
+.StyleSelector span {
+  font-size: 10pt;
 }
 
-.ColorWrapper {
-  display: flex;
+.ColorSelectorWrapper {
   margin-top: 15px;
+  width: 100%;
+  display: flex;
+  overflow-x: scroll;
+}
+
+.ColorSelector {
+  display: flex;
 }
 
 .SingleColor {
-  width: 35px;
-  height: 35px;
+  width: 32px;
+  height: 32px;
   margin-right: 20px;
   border-radius: 50%;
   overflow: hidden;
 }
+
 .SingleColor img {
   width: 100%;
   height: 100%;
