@@ -20,8 +20,6 @@ function App() {
     <div className="App">
       <Nav />
       <MobileNav />
-      {/* <JeanTitleRating jeanColor={selectedJean} /> */}
-      {/* <JeanPrice jeanColor={selectedJean} /> */}
 
       <MediaGallery
         jeanData={jeanData}
