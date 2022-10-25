@@ -20,24 +20,22 @@ function App() {
     <div className="App">
       <Nav />
       <MobileNav />
-      <div className="MobileView">
-        <MediaGallery
-          jeanData={jeanData}
+
+      <MediaGallery
+        jeanData={jeanData}
+        selectedStyle={selectedStyle}
+        selectedPicture={selectedPicture}
+        setSelectedPicture={setSelectedPicture}
+      />
+      <div className="Divider">
+        <StyleSelector
+          styles={jeanData.styles}
           selectedStyle={selectedStyle}
-          selectedPicture={selectedPicture}
+          setSelectedStyle={setSelectedStyle}
           setSelectedPicture={setSelectedPicture}
         />
-        <div className="Divider">
-          <StyleSelector
-            styles={jeanData.styles}
-            selectedStyle={selectedStyle}
-            setSelectedStyle={setSelectedStyle}
-            setSelectedPicture={setSelectedPicture}
-          />
-          <SizeSelector selectedStyle={selectedStyle} />
-        </div>
+        <SizeSelector selectedStyle={selectedStyle} />
       </div>
-      <div className="DesktopView"></div>
     </div>
   );
 }

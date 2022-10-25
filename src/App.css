@@ -7,9 +7,3 @@
 .Divider {
   margin-left: 10%;
 }
-
-@media only screen and (min-width: 766px) {
-  .MobileView {
-    display: none;
-  }
-}
