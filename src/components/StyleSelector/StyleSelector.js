@@ -6,10 +6,7 @@ const StyleSelector = ({
   setSelectedStyle,
   setSelectedPicture,
 }) => {
-  // console.log(styles);
   const updateStyle = (index) => {
-    console.log(index);
-
     setSelectedStyle(styles[index]);
     setSelectedPicture(styles[index].pictures[0]);
   };
