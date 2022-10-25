@@ -11,18 +11,36 @@ import JeanPrice from "./components/jean-price/JeanPrice";
 
 import jeanData from "./jeanData";
 import StyleSelector from "./components/StyleSelector/StyleSelector";
+import SizeSelector from "./components/SizeSelector/SizeSelector";
 
 function App() {
-  const [selectedStyle, setSelectedStyle] = useState(jeanData.styles[1]);
+  const [selectedStyle, setSelectedStyle] = useState(jeanData.styles[0]);
+  const [selectedPicture, setSelectedPicture] = useState(
+    selectedStyle.pictures[0]
+  );
 
   return (
     <div className="App">
       <Nav />
       <MobileNav />
-      <JeanTitleRating jeanColor={selectedStyle} />
-      <MediaGallery jeanData={jeanData} selectedStyle={selectedStyle} />
-      <StyleSelector styles={jeanData.styles} />
-      <JeanPrice jeanColor={selectedStyle} /> 
+      <div className="MobileView">
+        <MediaGallery
+          jeanData={jeanData}
+          selectedStyle={selectedStyle}
+          selectedPicture={selectedPicture}
+          setSelectedPicture={setSelectedPicture}
+        />
+        <div className="Divider">
+          <StyleSelector
+            styles={jeanData.styles}
+            selectedStyle={selectedStyle}
+            setSelectedStyle={setSelectedStyle}
+            setSelectedPicture={setSelectedPicture}
+          />
+          <SizeSelector selectedStyle={selectedStyle} />
+        </div>
+      </div>
+      <div className="DesktopView"></div>
     </div>
   );
 }
