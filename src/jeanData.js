@@ -31,11 +31,45 @@ import Jazz6 from "./images/Jazz/Jazz6.png";
 import Jazz7 from "./images/Jazz/Jazz7.png";
 
 import MediumIndigo from "./images/MediumIndigo/MediumIndigo.jpeg";
+import MediumIndigo1 from "./images/MediumIndigo/MediumIndigo1.png";
+import MediumIndigo2 from "./images/MediumIndigo/MediumIndigo2.png";
+import MediumIndigo3 from "./images/MediumIndigo/MediumIndigo3.png";
+import MediumIndigo4 from "./images/MediumIndigo/MediumIndigo4.png";
+import MediumIndigo5 from "./images/MediumIndigo/MediumIndigo5.png";
+import MediumIndigo6 from "./images/MediumIndigo/MediumIndigo6.png";
+
 import Orinda from "./images/Orinda/Orinda.jpeg";
+import Orinda1 from "./images/Orinda/Orinda1.png";
+import Orinda2 from "./images/Orinda/Orinda2.png";
+import Orinda3 from "./images/Orinda/Orinda3.png";
+import Orinda4 from "./images/Orinda/Orinda4.png";
+import Orinda5 from "./images/Orinda/Orinda5.png";
+import Orinda6 from "./images/Orinda/Orinda6.png";
+import Orinda7 from "./images/Orinda/Orinda7.png";
+
 import BlackHeart from "./images/BlackHeart/BlackHeart.jpeg";
+import BlackHeart1 from "./images/BlackHeart/BlackHeart1.png";
+import BlackHeart2 from "./images/BlackHeart/BlackHeart1.png";
+import BlackHeart3 from "./images/BlackHeart/BlackHeart1.png";
+
 import OjaiBlue from "./images/OjaiBlue/OjaiBlue.jpeg";
+import OjaiBlue1 from "./images/OjaiBlue/OjaiBlue1.png";
+import OjaiBlue2 from "./images/OjaiBlue/OjaiBlue2.png";
+import OjaiBlue3 from "./images/OjaiBlue/OjaiBlue3.png";
+
 import SambaGoal from "./images/SambaGoal/SambaGoal.jpeg";
+import SambaGoal1 from "./images/SambaGoal/SambaGoal1.png";
+import SambaGoal2 from "./images/SambaGoal/SambaGoal2.png";
+import SambaGoal3 from "./images/SambaGoal/SambaGoal3.png";
+
 import WornInGrey from "./images/WornInGrey/WornInGrey.jpeg";
+import WornInGrey1 from "./images/WornInGrey/WornInGrey1.png";
+import WornInGrey2 from "./images/WornInGrey/WornInGrey2.png";
+import WornInGrey3 from "./images/WornInGrey/WornInGrey3.png";
+import WornInGrey4 from "./images/WornInGrey/WornInGrey4.png";
+import WornInGrey5 from "./images/WornInGrey/WornInGrey5.png";
+import WornInGrey6 from "./images/WornInGrey/WornInGrey6.png";
+import WornInGrey7 from "./images/WornInGrey/WornInGrey7.png";
 
 const jeanData = {
   title: "501® ORIGINAL CROPPED WOMEN'S JEANS",
@@ -96,7 +130,14 @@ const jeanData = {
       votes: "(3)",
       waist: [23, 24, 25, 26, 27, 28, 29, 30, 31, 32],
       length: [28],
-      pictures: ["href", "href"],
+      pictures: [
+        MediumIndigo1,
+        MediumIndigo2,
+        MediumIndigo3,
+        MediumIndigo4,
+        MediumIndigo5,
+        MediumIndigo6,
+      ],
     },
     {
       name: "Orinda Troy Horse - Dark Wash",
@@ -106,7 +147,7 @@ const jeanData = {
       votes: "(5)",
       waist: [23, 24, 25, 26, 27, 28, 29, 30, 31, 32],
       length: [26, 28, 30],
-      pictures: ["href", "href"],
+      pictures: [Orinda1, Orinda2, Orinda3, Orinda4, Orinda5, Orinda6, Orinda7],
     },
     {
       name: "Black Heart",
@@ -116,7 +157,7 @@ const jeanData = {
       votes: "(33)",
       waist: [23, 24, 25, 26, 27, 28, 29, 30, 31, 32],
       length: [26, 28],
-      pictures: ["href", "href"],
+      pictures: [BlackHeart1, BlackHeart2, BlackHeart3],
     },
     {
       name: "Ojai Blue - Light Wash",
@@ -126,7 +167,7 @@ const jeanData = {
       votes: "(1)",
       waist: [23, 24, 25, 26, 27, 28, 29, 30, 31, 32],
       length: [26, 28],
-      pictures: ["href", "href"],
+      pictures: [OjaiBlue1, OjaiBlue2, OjaiBlue3],
     },
     {
       name: "Samba Goal - Light Wash",
@@ -136,7 +177,7 @@ const jeanData = {
       votes: "(7)",
       waist: [23, 24, 25, 26, 27, 28, 29, 30, 31, 32],
       length: [26, 28],
-      pictures: ["href", "href"],
+      pictures: [SambaGoal1, SambaGoal2, SambaGoal3],
     },
     {
       name: "Worn In Grey - Grey",
@@ -146,7 +187,15 @@ const jeanData = {
       votes: "",
       waist: [23, 24, 25, 26, 27, 28, 29, 30, 31, 32],
       length: [28],
-      pictures: ["href", "href"],
+      pictures: [
+        WornInGrey1,
+        WornInGrey2,
+        WornInGrey3,
+        WornInGrey4,
+        WornInGrey5,
+        WornInGrey6,
+        WornInGrey7,
+      ],
     },
   ],
 };
