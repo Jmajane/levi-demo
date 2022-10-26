@@ -1,20 +1,33 @@
 import "./SizeSelector.css";
+import { useState } from "react"
+
 
 const SizeSelector = ({ selectedStyle }) => {
+  const [active, setActive] = useState(null)
   const waistSizes = selectedStyle.waist.map((size, index) => {
+   
     return (
-      <div key={index} className="SingleSize">
-        <span>{size}</span>
+      <div className="container">
+        <button  key={index} className="SingleSize">
+          <span onClick={() => setActive(size)}
+          className={`size ${active == size && 'active'}`}
+          >{size}</span>
+        </button>
       </div>
     );
   });
   const lengthSizes = selectedStyle.length.map((size, index) => {
     return (
-      <div key={index} className="SingleSize">
-        <span>{size}</span>
+      <div className="container">
+        <button  key={index} className="SingleSize">
+          <span onClick={() => setActive(size)}
+          className={`size ${active == size && 'active'}`}
+          >{size}</span>
+        </button>
       </div>
     );
   });
+  
   return (
     <div className="SizeSelector">
       <h5>Select Size</h5>
