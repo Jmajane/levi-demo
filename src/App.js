@@ -5,6 +5,8 @@ import { useState } from "react";
 import MobileNav from "./components/mobile-nav/MobileNav";
 import Nav from "./components/nav/Nav";
 import MediaGallery from "./components/MediaGallery/MediaGallery";
+import JeanPrice from "./components/JeanPrice/JeanPrice"
+
 
 import jeanData from "./jeanData";
 import StyleSelector from "./components/StyleSelector/StyleSelector";
@@ -20,22 +22,25 @@ function App() {
     <div className="App">
       <Nav />
       <MobileNav />
-
-      <MediaGallery
-        jeanData={jeanData}
-        selectedStyle={selectedStyle}
-        selectedPicture={selectedPicture}
-        setSelectedPicture={setSelectedPicture}
-      />
-      <div className="Divider">
-        <StyleSelector
-          styles={jeanData.styles}
+      <div className="MobileView">
+        <MediaGallery
+          jeanData={jeanData}
           selectedStyle={selectedStyle}
-          setSelectedStyle={setSelectedStyle}
+          selectedPicture={selectedPicture}
           setSelectedPicture={setSelectedPicture}
         />
-        <SizeSelector selectedStyle={selectedStyle} />
+        <div className="Divider">
+          <StyleSelector
+            styles={jeanData.styles}
+            selectedStyle={selectedStyle}
+            setSelectedStyle={setSelectedStyle}
+            setSelectedPicture={setSelectedPicture}
+          />
+          <SizeSelector selectedStyle={selectedStyle} />
+          <JeanPrice selectedStyle={selectedStyle} />
+        </div>
       </div>
+      <div className="DesktopView"></div>
     </div>
   );
 }
