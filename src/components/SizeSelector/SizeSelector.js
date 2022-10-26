@@ -3,16 +3,16 @@ import "./SizeSelector.css";
 const SizeSelector = ({ selectedStyle }) => {
   const waistSizes = selectedStyle.waist.map((size, index) => {
     return (
-      <div key={index} className="SingleSize">
+      <button key={index} className="SingleSize">
         <span>{size}</span>
-      </div>
+      </button>
     );
   });
   const lengthSizes = selectedStyle.length.map((size, index) => {
     return (
-      <div key={index} className="SingleSize">
+      <button key={index} className="SingleSize">
         <span>{size}</span>
-      </div>
+      </button>
     );
   });
   return (
