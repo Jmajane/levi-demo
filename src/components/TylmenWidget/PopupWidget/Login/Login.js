@@ -32,7 +32,7 @@ const LoginState = () => {
       <button>Google Login</button>
       <button>Apple Login</button>
       <span>Don't have an account?</span>
-      <span>SignUp</span>
+      <span>Sign Up</span>
     </div>
   );
 };

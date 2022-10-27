@@ -1,7 +1,8 @@
 import "./StyleSelector.css";
 
-import { useState } from 'react'
+import { useState } from "react";
 import { accordionDetailsClasses } from "@mui/material";
+import { border } from "@mui/system";
 
 const StyleSelector = ({
   styles,
@@ -9,27 +10,22 @@ const StyleSelector = ({
   setSelectedStyle,
   setSelectedPicture,
 }) => {
-  const updateStyle = (index) => {
+  const updateStyle = (e, index) => {
     setSelectedStyle(styles[index]);
     setSelectedPicture(styles[index].pictures[0]);
+    console.log(e.currentTarget);
+    e.currentTarget.style = "border: 2px solid black";
   };
-  
-  // const [buttonStyle, useButtonStyle] = useState({
-  //   buttonOneStyle: { border: "1px solid black" },
-  //   buttonTwoStyle: { border: "none" }
-  // })
 
-  
   const availableStyles = styles.map(({ jeanColor }, index) => {
     return (
       <div
         key={index}
         className="SingleColor"
-        onClick={() => updateStyle(index)}
+        onClick={(e) => updateStyle(e, index)}
       >
         <img src={jeanColor} />
       </div>
-    
     );
   });
   return (
@@ -37,9 +33,7 @@ const StyleSelector = ({
       <span>{selectedStyle.name}</span>
       <div className="ColorSelectorWrapper">
         <div className="ColorSelector">{availableStyles}</div>
-        
       </div>
-    
     </div>
   );
 };

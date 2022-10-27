@@ -39,7 +39,7 @@ function App() {
             setSelectedPicture={setSelectedPicture}
           />
           <SizeSelector selectedStyle={selectedStyle} />
-          <TylmenWidget />
+          {/* <TylmenWidget /> */}
           <JeanPrice selectedStyle={selectedStyle} />
         </div>
       </div>
