@@ -5,12 +5,13 @@ import { useState } from "react";
 import MobileNav from "./components/mobile-nav/MobileNav";
 import Nav from "./components/nav/Nav";
 import MediaGallery from "./components/MediaGallery/MediaGallery";
-import JeanPrice from "./components/JeanPrice/JeanPrice"
+import JeanPrice from "./components/JeanPrice/JeanPrice";
 import TylmenWidget from "./components/TylmenWidget/TylmenWidget";
 
 import jeanData from "./jeanData";
 import StyleSelector from "./components/StyleSelector/StyleSelector";
 import SizeSelector from "./components/SizeSelector/SizeSelector";
+import PopupWidget from "./components/TylmenWidget/PopupWidget/PopupWidget";
 
 function App() {
   const [selectedStyle, setSelectedStyle] = useState(jeanData.styles[0]);
@@ -22,6 +23,7 @@ function App() {
     <div className="App">
       <Nav />
       <MobileNav />
+      <PopupWidget />
       <div className="MobileView">
         <MediaGallery
           jeanData={jeanData}
@@ -41,7 +43,6 @@ function App() {
           <JeanPrice selectedStyle={selectedStyle} />
         </div>
       </div>
-      <div className="DesktopView"></div>
     </div>
   );
 }
