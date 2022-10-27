@@ -4,7 +4,7 @@ import { useState } from "react"
 
 const SizeSelector = ({ selectedStyle }) => {
   const [active, setActive] = useState(null)
-  const [secondActive, setSecondActive] = useState()
+  const [secondActive, setSecondActive] = useState(null)
 
 
   const waistSizes = selectedStyle.waist.map((size, index) => {
