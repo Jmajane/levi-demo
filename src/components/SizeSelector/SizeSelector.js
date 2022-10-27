@@ -4,17 +4,16 @@ import { useState } from "react"
 
 const SizeSelector = ({ selectedStyle }) => {
   const [active, setActive] = useState(null)
-  const [secondActive, setSecondActive] = useState()
+  const [secondActive, setSecondActive] = useState(null)
 
 
   const waistSizes = selectedStyle.waist.map((size, index) => {
     return (
       <div className="container">
-        <button key={index} className="SingleSize">
-          <span onClick={() => setActive(size)}
-          className={`size ${active == size && 'active'}`}
-          >{size}</span>
-        </button>
+        <div key={index} onClick={() => setActive(size)}
+          className={`size ${active == size && 'active'}`}>
+          <span>{size}</span>
+        </div>
       </div>
     );
   });
@@ -23,11 +22,10 @@ const SizeSelector = ({ selectedStyle }) => {
   const lengthSizes = selectedStyle.length.map((size, index) => {
     return (
       <div className="container">
-        <button key={index} className="SingleSize">
-          <span onClick={() => setSecondActive(size)}
-          className={`size ${secondActive == size && 'active'}`}
-          >{size}</span>
-        </button>
+        <div key={index} onClick={() => setSecondActive(size)}
+          className={`size ${secondActive == size && 'active'}`}>
+          <span>{size}</span>
+        </div>
       </div>
     );
   });

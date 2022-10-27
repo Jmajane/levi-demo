@@ -19,13 +19,13 @@
   margin-right: 15px;
 }
 
-.SingleSize {
-  border: 1px solid black;
+.size {
+  border: 1px solid rgb(214, 214, 214);
   padding: 10px;
   
 }
 
-.SingleSize .active {
-  background-color: rgb(177, 177, 177);
+.active {
+  border: 1px solid black;
 }
 

@@ -6,7 +6,7 @@ import MobileNav from "./components/mobile-nav/MobileNav";
 import Nav from "./components/nav/Nav";
 import MediaGallery from "./components/MediaGallery/MediaGallery";
 import JeanPrice from "./components/JeanPrice/JeanPrice"
-
+import TylmenWidget from "./components/TylmenWidget/TylmenWidget";
 
 import jeanData from "./jeanData";
 import StyleSelector from "./components/StyleSelector/StyleSelector";
@@ -37,6 +37,7 @@ function App() {
             setSelectedPicture={setSelectedPicture}
           />
           <SizeSelector selectedStyle={selectedStyle} />
+          <TylmenWidget />
           <JeanPrice selectedStyle={selectedStyle} />
         </div>
       </div>
