@@ -27,7 +27,12 @@ const LoginState = () => {
           value={formState.password}
           onChange={(e) => handleChange(e)}
         />
+        <input type="submit" value="Login" />
       </form>
+      <button>Google Login</button>
+      <button>Apple Login</button>
+      <span>Don't have an account?</span>
+      <span>SignUp</span>
     </div>
   );
 };
