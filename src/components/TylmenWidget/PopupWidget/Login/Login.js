@@ -3,6 +3,8 @@ import { Link, useNavigate } from "react-router-dom";
 import { auth, signInWithEmailAndPassword, signInWithGoogle } from "../FirebaseLogin"
 import { useAuthState } from "react-firebase-hooks/auth";
 
+import "./Login.css" 
+
 function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -17,15 +19,16 @@ function Login() {
     if (user) navigate(".../TylmenWidget.js");
   }, [user, loading]);
   return (
-    <div className="login">
-      <div className="loginContainer">
+    <div className="Login">
+      <div className="LoginWrapper">
+      <form>
         <input
           type="text"
           className="loginText"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder="E-mail Address"
-        />
+          />
         <input 
           type="password"
           className="loginText"
@@ -36,12 +39,13 @@ function Login() {
           <button
             className="loginBtn"
             onClick={() => signInWithEmailAndPassword(email, password)}
-          >
+            >
             Login
           </button>
           <button className="loginBtnGoogle" onClick={signInWithGoogle}>
             Login with Google
           </button>
+          </form>
           <div>
           <Link to="/reset"> Forgot Password</Link>
           </div>
@@ -54,8 +58,6 @@ function Login() {
 }
 
 export default Login; 
-
-
 
 
 
