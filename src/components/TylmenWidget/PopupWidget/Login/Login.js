@@ -1,6 +1,9 @@
 import { useState } from "react";
 import "./Login.css";
 
+import { FcGoogle } from "react-icons/fc";
+import { FaApple } from "react-icons/fa";
+
 const LoginState = () => {
   const handleChange = (e) => {
     setFormState((prevState) => {
@@ -37,8 +40,15 @@ const LoginState = () => {
           <div className="OrRight"></div>
         </div>
         <div className="oAuth">
-          <button>Google Login</button>
-          <button>Apple Login</button>
+          <button>
+            <FaApple />
+            Continue with Apple
+          </button>
+
+          <button>
+            <FcGoogle />
+            Continue with Google
+          </button>
         </div>
         <div className="NoAccount">
           <span>Don't have an account?</span>
