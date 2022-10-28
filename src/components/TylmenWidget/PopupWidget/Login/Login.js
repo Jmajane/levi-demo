@@ -1,50 +1,80 @@
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { auth, signInWithEmailAndPassword, signInWithGoogle } from "../FirebaseLogin"
+import {
+  auth,
+  signInWithEmailAndPassword,
+  signInWithGoogle,
+} from "../FirebaseLogin";
 import { useAuthState } from "react-firebase-hooks/auth";
+import "./Login.css";
+import { FcGoogle } from "react-icons/fc";
+import { FaApple } from "react-icons/fa";
+
 
 import "./Login.css" 
 
 function Login() {
+
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [user, loading, error] = useAuthState(auth);
   const navigate = useNavigate();
+  const handleChange = (e) => {
+    setFormState((prevState) => {
+      return { ...prevState, [e.target.name]: e.target.value };
+    });
+  };
+
   useEffect(() => {
     if (loading) {
-      return (<div>
-        <h2>Loading...</h2>
-      </div>)
+      return (
+        <div>
+          <h2>Loading...</h2>
+        </div>
+      );
     }
     if (user) navigate(".../TylmenWidget.js");
   }, [user, loading]);
   return (
     <div className="Login">
       <div className="LoginWrapper">
-      <form>
-        <input
-          type="text"
-          className="loginText"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          placeholder="E-mail Address"
+
+        <h1>Tylmen</h1>
+        <form>
+          <label>Email</label>
+          <input
+            type="text"
+            name="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
           />
-        <input 
-          type="password"
-          className="loginText"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          placeholder="Password"
+          <label>Password</label>
+          <input
+            type="password"
+            name="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
           />
-          <button
-            className="loginBtn"
-            onClick={() => signInWithEmailAndPassword(email, password)}
-            >
-            Login
+          <button onClick={() => signInWithEmailAndPassword(email, password)}
+            >>Log In</button>
+        </form>
+        <div className="Or">
+          <div className="OrLeft"></div>
+          <span>or</span>
+          <div className="OrRight"></div>
+        </div>
+        <div className="oAuth">
+          <button>
+            <FaApple />
+            Continue with Apple
+
           </button>
-          <button className="loginBtnGoogle" onClick={signInWithGoogle}>
-            Login with Google
+
+          <button>
+            <FcGoogle />
+            Continue with Google
           </button>
+
           </form>
           <div>
           <Link to="/reset"> Forgot Password</Link>
@@ -100,4 +130,5 @@ export default Login;
 //   );
 // };
 
-// export default LoginState;
+
+export default Login;

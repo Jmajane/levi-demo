@@ -1,4 +1,5 @@
 .Login {
+
     width: 100%;
     background-color: rgb(27, 24, 30);
     color: white;
@@ -105,3 +106,111 @@
   .NoAccount span {
     margin-right: 20px;
   }
+
+  width: 100%;
+  background-color: rgb(27, 24, 30);
+  color: white;
+  display: flex;
+  justify-content: center;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.LoginWrapper {
+  width: 80%;
+}
+
+.Login form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-size: small;
+}
+
+.Login form label {
+  padding-left: 5%;
+  margin: 10px 0px 5px 0px;
+}
+
+.Login form input {
+  background-color: rgb(45, 40, 49);
+  padding: 13px 5%;
+  border: none;
+  border-radius: 10px;
+  color: white;
+}
+
+.Login form input:focus {
+  outline: none;
+}
+
+.Login form button {
+  margin-top: 34px;
+  height: 50px;
+  background-color: rgb(115, 0, 242);
+  border-radius: 10px;
+  border: none;
+  color: white;
+  font-size: 12pt;
+}
+
+.Or {
+  margin-top: 70px;
+  margin-bottom: 50px;
+
+  display: flex;
+}
+
+.OrLeft {
+  flex-grow: 1;
+  border-top: 2px solid rgb(57, 55, 59);
+  margin-top: 10px;
+}
+
+.Or span {
+  display: flex;
+  flex-grow: 0;
+  width: 50px;
+  justify-content: center;
+  color: rgb(150, 150, 150);
+}
+
+.OrRight {
+  flex-grow: 1;
+  border-top: 2px solid rgb(57, 55, 59);
+  margin-top: 10px;
+}
+
+.oAuth {
+  display: flex;
+  flex-direction: column;
+}
+.oAuth svg {
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+}
+
+.oAuth button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 45px;
+  border-radius: 10px;
+  font-size: 12pt;
+  border: none;
+  margin-bottom: 15px;
+}
+.oAuth button:last-child svg {
+  margin-left: 13px;
+}
+
+.NoAccount {
+  margin-top: 35px;
+  margin-bottom: 90px;
+}
+
+.NoAccount span {
+  margin-right: 20px;
+}
+
