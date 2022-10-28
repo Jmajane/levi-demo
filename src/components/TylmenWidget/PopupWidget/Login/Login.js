@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./Login.css";
 
 const LoginState = () => {
   const handleChange = (e) => {
@@ -10,29 +11,40 @@ const LoginState = () => {
   const [formState, setFormState] = useState({ email: "", password: "" });
 
   return (
-    <div id="LoginState">
-      <h1>Tylmen</h1>
-      <form>
-        <label>Email</label>
-        <input
-          type="text"
-          name="email"
-          value={formState.email}
-          onChange={(e) => handleChange(e)}
-        />
-        <label>Password</label>
-        <input
-          type="password"
-          name="password"
-          value={formState.password}
-          onChange={(e) => handleChange(e)}
-        />
-        <input type="submit" value="Login" />
-      </form>
-      <button>Google Login</button>
-      <button>Apple Login</button>
-      <span>Don't have an account?</span>
-      <span>Sign Up</span>
+    <div className="Login">
+      <div className="LoginWrapper">
+        <h1>Tylmen</h1>
+        <form>
+          <label>Email</label>
+          <input
+            type="text"
+            name="email"
+            value={formState.email}
+            onChange={(e) => handleChange(e)}
+          />
+          <label>Password</label>
+          <input
+            type="password"
+            name="password"
+            value={formState.password}
+            onChange={(e) => handleChange(e)}
+          />
+          <button type="submit">Log In</button>
+        </form>
+        <div className="Or">
+          <div className="OrLeft"></div>
+          <span>or</span>
+          <div className="OrRight"></div>
+        </div>
+        <div className="oAuth">
+          <button>Google Login</button>
+          <button>Apple Login</button>
+        </div>
+        <div className="NoAccount">
+          <span>Don't have an account?</span>
+          <span>Sign Up</span>
+        </div>
+      </div>
     </div>
   );
 };
