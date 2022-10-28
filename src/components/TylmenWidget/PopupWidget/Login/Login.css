@@ -1,8 +1,5 @@
 .Login {
-  position: absolute;
-  bottom: 0;
   width: 100%;
-  z-index: 1;
   background-color: rgb(27, 24, 30);
   color: white;
   display: flex;

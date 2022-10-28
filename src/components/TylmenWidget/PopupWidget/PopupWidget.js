@@ -2,6 +2,7 @@ import "./PopupWidget.css";
 import LoginState from "./Login/Login";
 import IntroState from "./Intro/Intro";
 import { useState } from "react";
+import "./PopupWidget.css";
 
 const PopupWidget = () => {
   const updateWidget = () => {
@@ -11,7 +12,7 @@ const PopupWidget = () => {
     <IntroState updateWidget={updateWidget} />
   );
 
-  return <div id="WidgetContainer">{widgetState}</div>;
+  return <div className="WidgetContainer">{widgetState}</div>;
 };
 
 export default PopupWidget;
