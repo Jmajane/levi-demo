@@ -3,15 +3,14 @@ import "./Intro.css";
 
 const IntroState = ({ updateWidget }) => {
   return (
-    <div id="IntroState">
-      <p>Sizing Suggestions that knows your every Inch.</p>
-      <video
-        src={IntroClip}
-        autoPlay
-        loop
-        muted
-        style={{ width: "90%", height: "100%" }}
-      />
+    <div className="Intro">
+      <div className="IntroTitle">
+        <h4>Sizing Suggestions that</h4>
+        <h4>knows your every Inch.</h4>
+      </div>
+
+      <video src={IntroClip} autoPlay loop muted />
+
       <button onClick={() => updateWidget()}>Learn More</button>
     </div>
   );
